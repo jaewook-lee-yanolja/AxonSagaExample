@@ -1,0 +1,19 @@
+
+server:
+  port: 9094
+
+spring:
+  datasource:
+    url: jdbc:h2:file:~/data/axon/shipmentDB
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true

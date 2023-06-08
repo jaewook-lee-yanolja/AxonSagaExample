@@ -1,0 +1,2 @@
+rootProject.name = 'AxonSagaExample'
+include('CommonService', 'OrderService', 'PaymentService', 'ShipmentService', 'UserService')
