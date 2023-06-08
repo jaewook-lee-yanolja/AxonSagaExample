@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CommonService/AxonSagaExample.CommonService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CommonService/AxonSagaExample.CommonService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrderService/AxonSagaExample.OrderService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OrderService/AxonSagaExample.OrderService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PaymentService/AxonSagaExample.PaymentService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PaymentService/AxonSagaExample.PaymentService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShipmentService/AxonSagaExample.ShipmentService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ShipmentService/AxonSagaExample.ShipmentService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UserService/AxonSagaExample.UserService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UserService/AxonSagaExample.UserService.main.iml" />
+    </modules>
+  </component>
+</project>
