@@ -1,0 +1,151 @@
+.
+├── CommonService
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── example
+│           │           └── commonservice
+│           │               ├── commands
+│           │               │   ├── CompleteOrderCommand.java
+│           │               │   ├── ShipOrderCommand.java
+│           │               │   └── ValidatePaymentCommand.java
+│           │               ├── events
+│           │               │   ├── OrderCompletedEvent.java
+│           │               │   ├── OrderShippedEvent.java
+│           │               │   └── PaymentProcessedEvent.java
+│           │               ├── model
+│           │               │   ├── CardDetail.java
+│           │               │   └── User.java
+│           │               └── queries
+│           │                   └── GetUserPaymentDetailsQuery.java
+│           └── resources
+│               └── application.properties
+├── OrderService
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── example
+│           │           └── orderservice
+│           │               ├── OrderServiceApplication.java
+│           │               └── command
+│           │                   └── api
+│           │                       ├── aggregate
+│           │                       │   └── OrderAggregate.java
+│           │                       ├── command
+│           │                       │   └── CreateOrderCommand.java
+│           │                       ├── controller
+│           │                       │   └── OrderCommandController.java
+│           │                       ├── data
+│           │                       │   ├── Order.java
+│           │                       │   └── OrderRepository.java
+│           │                       ├── events
+│           │                       │   ├── OrderCreatedEvent.java
+│           │                       │   └── OrderEventsHandler.java
+│           │                       ├── model
+│           │                       │   └── OrderRestModel.java
+│           │                       └── saga
+│           │                           └── OrderProcessingSaga.java
+│           └── resources
+│               └── application.yml
+├── PaymentService
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── example
+│           │           └── paymentservice
+│           │               ├── PaymentServiceApplication.java
+│           │               └── command
+│           │                   └── api
+│           │                       ├── aggregate
+│           │                       │   └── PaymentAggregate.java
+│           │                       ├── data
+│           │                       │   ├── Payment.java
+│           │                       │   └── PaymentRepository.java
+│           │                       └── events
+│           │                           └── PaymentEventHandler.java
+│           └── resources
+│               └── application.yml
+├── README.md
+├── ShipmentService
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── example
+│           │           └── shipmentservice
+│           │               ├── ShipmentServiceApplication.java
+│           │               └── command
+│           │                   └── api
+│           │                       ├── aggregate
+│           │                       │   └── ShipmentAggregate.java
+│           │                       ├── data
+│           │                       │   ├── Shipment.java
+│           │                       │   └── ShipmentRepository.java
+│           │                       └── events
+│           │                           └── ShipmentsEventHandler.java
+│           └── resources
+│               └── application.yml
+├── UserService
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── example
+│           │           └── userservice
+│           │               ├── UserServiceApplication.java
+│           │               └── projection
+│           │                   └── UserProjection.java
+│           └── resources
+│               └── application.yml
+├── build.gradle
+├── gradle
+│   └── wrapper
+│       └── gradle-wrapper.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle
+└── tree.txt
+
+77 directories, 72 files

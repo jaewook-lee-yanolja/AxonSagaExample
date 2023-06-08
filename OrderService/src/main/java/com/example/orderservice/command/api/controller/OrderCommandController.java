@@ -12,14 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/orders")
 @RequiredArgsConstructor
+@RequestMapping("/orders")
 public class OrderCommandController {
 
-    private CommandGateway commandGateway; // interface towards the Command dispatching mechanism
+    private final CommandGateway commandGateway; // interface towards the Command dispatching mechanism
 
     @PostMapping
     public String createOrder(@RequestBody OrderRestModel orderRestModel){
+
 
         String orderId = UUID.randomUUID().toString();
 

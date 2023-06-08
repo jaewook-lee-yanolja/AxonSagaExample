@@ -60,6 +60,7 @@ public class OrderAggregate {
         AggregateLifecycle.apply(orderCompletedEvent);
     }
 
+    @EventSourcingHandler
     public void on(OrderCompletedEvent event){
         this.orderStatus = event.getOrderStatus();
     }

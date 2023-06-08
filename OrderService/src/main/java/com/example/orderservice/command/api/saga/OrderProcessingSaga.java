@@ -26,8 +26,8 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class OrderProcessingSaga {
 
-    private CommandGateway commandGateway;
-    private QueryGateway queryGateway;
+    private final CommandGateway commandGateway;
+    private final QueryGateway queryGateway;
 
     @StartSaga
     @SagaEventHandler(associationProperty = "orderId") // workflow trigger
@@ -94,7 +94,5 @@ public class OrderProcessingSaga {
     @EndSaga
     public void handle(OrderCompletedEvent event){
         log.info("OrderCompletedEvent in Saga for Order Id : {}", event.getOrderId());
-
-
     }
 }
